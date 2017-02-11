@@ -164,10 +164,16 @@ section.main-visual .info {
 	font-family: serif;
 }
 
-section.main-visual .info time {
-	display: block;
+section.main-visual .info h1 {
 	font-size: 20px;
 	padding: 0 0 18px;
+	font-family: sans-serif;
+}
+
+section.main-visual .info time {
+	display: block;
+	font-size: 16px;
+	padding: 0 0 12px;
 }
 
 section.main-visual .info p {
@@ -222,7 +228,7 @@ section.events .wrapper {
 	transform: matrix(1, 0.5, 0, 1, 0, 0);
 }
 
-section  h1 {
+section h2 {
 	display: block;
 	margin: -70px auto 100px;
 	font-size: 30px;
@@ -231,19 +237,27 @@ section  h1 {
 	text-align: center;
 }
 
-section.events .wrapper h2 img {
-	margin-bottom: 18px; 
+section.events .wrapper h3{
+	font-size: 33px;
+	margin-bottom: 32px; 
 	display: block;
-	height: 28px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-shadow: black 1px 1px 0px, black -1px 1px 0px,
+             black 1px -1px 0px, black -1px -1px 0px;
 }
 
-section.events .wrapper h3 {
+
+
+
+section.events .wrapper h4 {
 	font-size: 18px;
 	margin: 0 0 30px;
 }
 
 section.events .wrapper .place {
 	margin: 10px 0 30px;
+	font-size: 12px;
 }
 
 section.events .wrapper .info {
@@ -304,10 +318,11 @@ section.events .wrapper ul.main li:hover img {
 	opacity: 0.7;
 }
 
-section.events .wrapper ul.main li h4 {
+section.events .wrapper ul.main li h5 {
 	margin: 0 0 15px;
 	display: block;
 	height: 20px;
+	font-size: 14px;
 }
 
 section.events .wrapper ul.main li.unit {
@@ -324,10 +339,6 @@ section.events .wrapper ul.main li.unit:after {
   background: url(../img/comment.jpg);
   background-size: cover;
   position: absolute;
-}
-
-section.events .wrapper ul.main li.unit img {
-	height: 130px;
 }
 
 section.events .wrapper ul.main li.unit:hover img {
@@ -378,7 +389,7 @@ section.events .mini li p {
 
 
 
-section.events .mini li h2 {
+section.events .mini li h3 {
 	font-size: 21px;
 	margin: 0 0 30px;
 	color: #fff;
@@ -400,7 +411,7 @@ section.exhibitor {
 	background: #fff;
 }
 
-/*section.exhibitor h1 {
+/*section.exhibitor h2 {
 	margin: -273px 0 0 38px;
 	font-size: 30px;
 	color: #000;
@@ -424,12 +435,13 @@ section.exhibitor ul li {
 section.exhibitor ul li .category {
 	display: inline-block;
 	border: 2px solid #000;
-	padding: 2px 8px;
+	padding: 5px 5px;
 	font-weight: 900;
 	margin: 0 0 8px;
-	width: 147px;
+	width: 133px;
 	font-family: sans-serif;
 	background: #ddd;
+	font-size: 13px;
 }
 
 section.exhibitor ul li .cordinate {
@@ -480,7 +492,7 @@ section.exhibitor ul li .place {
 
 
 
-section.exhibitor h2 {
+section.exhibitor h3 {
 	display: inline-block;
 	width: 966px;
 	padding: 18px 0 18px 18px;
@@ -572,7 +584,7 @@ section.access {
 	z-index: 99;
 }
 
-section.access  h1 {
+section.access  h2 {
 	margin: -70px auto 25px;
 }
 
@@ -605,7 +617,7 @@ section.access .wrapper {
 	margin: 0 auto;
 }
 
-section.access h2 {
+section.access h3 {
 	padding: 15px 16px;
 	margin: 0 0 20px;
 	font-size: 17px;
@@ -613,7 +625,7 @@ section.access h2 {
 	background: #fafafa;
 }
 
-h4.secret {
+h5.secret {
 		font-size: 13px;
 		color: #aaa;
 	}
@@ -664,6 +676,8 @@ footer {
 
 section.main-visual .info p.pc {
 	display: block;
+	font-size: 12px;
+	line-height: 22px;
 }
 
 section.main-visual .info p.sp {
@@ -675,8 +689,40 @@ section.main-visual .info p.sp {
 }
 
 @media screen and (max-width: 1024px){
+
 	section.exhibitor {
 		width: 100%;
+	}
+
+	section.exhibitor h3 {
+		width: 100%;
+		margin: 64px 0px;
+	}
+
+	video#video {
+		display: none;
+		min-width: 0;
+		min-height: 0;
+		position: fixed;
+		z-index: -1;
+	}
+
+	.background {
+		display: block;
+		width: 100%;
+		height: 100vh;
+		background: url(../img/sp-back.jpg);
+		background-size: cover;
+		position: fixed;
+		z-index: -1;
+	}
+
+	section.exhibitor ul li {
+		width: 33%;
+	}
+
+	section.exhibitor ul li .works {
+		font-size: 12px;
 	}
 
 }
@@ -693,6 +739,10 @@ section.main-visual .info p.sp {
 		width: 90%;
 	}
 
+	section.main-visual .info time {
+		font-size: 11px;
+	}
+
 	section.main-visual .top-contents {
 		padding: 29px 0 0;
 	}
@@ -705,9 +755,10 @@ section.main-visual .info p.sp {
 		padding: 122px 0 12px;
 	}
 
-	section.events .wrapper h2 img {
+	section.events .wrapper h3 {
+		margin-top: 100px;
 		position: relative;
-		margin: 0 auto 30px;
+		text-align: center;
 	}
 
 	section.events .wrapper .place {
@@ -721,8 +772,12 @@ section.main-visual .info p.sp {
 		width: 80%;
 	}
 
-	section.events .wrapper ul.main li img {
-		
+	section.events .wrapper h4 {
+		margin: 52px 0 30px;
+	}
+
+	section.events .wrapper ul.main {
+		margin: 0 0 40px 0;
 	}
 
 	section.events .wrapper ul.main li.unit {
@@ -730,8 +785,8 @@ section.main-visual .info p.sp {
 	}
 
 
-
 	section.events .mini {
+		margin: 120px 0 0;
 		padding: 0;
 	}
 
@@ -788,20 +843,16 @@ section.main-visual .info p.sp {
 		width: 46%;
 	}
 
-	section.exhibitor h2 {
+	section.exhibitor h3 {
 		width: 88%;
-		margin: 64px 22px;
-	}
-
-	section.events .wrapper ul.main li.unit img {
-		height: 30vw;
+		margin: 64px 19px;
 	}
 
 	section.events .wrapper ul.main li.unit img:hover {
 		height: 30vw;
 	}
 
-	section  h1 {
+	section h2 {
 		margin: -30px auto 70px;
 	}
 
@@ -810,11 +861,13 @@ section.main-visual .info p.sp {
 	}
 
 	section.events .wrapper ul.main li:after {
-		margin: -77px 0px 0px 30vw;
+		margin: -77px 0px 0px 29vw;
 	}
 
 	section.main-visual .info p.sp {
 	display: block;
+	font-size: 12px;
+	line-height: 22px;
 }
 
 	section.main-visual .info p.pc {
@@ -840,13 +893,6 @@ section.main-visual .info p.sp {
 		width: 90%;
 	}　
 
-	video#video {
-		display: none;
-		min-width: 0;
-		min-height: 0;
-		position: fixed;
-		z-index: -1;
-	}
 
 	.background {
 		display: block;
@@ -855,8 +901,6 @@ section.main-visual .info p.sp {
 		background: url(../img/sp-back.jpg);
 		background-size: cover;
 	}
-
-
 
 
 }
