@@ -594,7 +594,7 @@ section.access .wrapper {
 
 a.btn {
 	display: block;
-	width: 400px;
+	width: 285px;
 	height: 50px;
 	margin: 35px 0;
 	color: #000;
@@ -659,6 +659,59 @@ img.none {
   line-height: 15px;
   display: block;
   margin: 0 0 20px;
+}
+
+
+
+.timetable .time-fixed {
+	display: none;
+	width: 80px;
+	position: fixed;
+	background: #fff;
+	left: 0;
+}
+
+.timetable .time-fixed tr td {
+	padding: 20px 30px;
+	border: 2px solid #000;
+}
+
+.timetable .main-table {
+	width: 300%;
+}
+
+.timetable .main-table tr td {
+	width: 200px;
+	padding: 20px 30px;
+	border: 2px solid #000;
+}
+
+.timetable .main-table tr td.table-time {
+	width: 80px;
+	padding: 5px 10px 12px;
+	background: #fff; 
+	color: #aaa;
+	text-align: center;
+}
+
+.timetable .main-table tr td.closed {
+	background: #000;
+	color: #fff;
+}
+
+.timetable .main-table tr td.milestone {
+	width: 80px;
+	padding: 5px 10px 12px;
+	background: #fff; 
+	font-weight: 900;
+	color: #000;
+}
+
+.timetable div {
+	width: 200px;
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	position: fixed;
 }
 
 /* section */
